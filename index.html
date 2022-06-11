@@ -14,15 +14,15 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="bg-gray-500 text-white">
     <!-- Header -->
     <nav class="relative container w-full xl:w-full">
-        <div class="flex item-center justify-between bg-gray-800 text-white h-20">
-            <div class="pt-4 text-2xl font-bold pl-5">
+        <div class="flex items-center justify-between bg-gray-900 text-white h-20">
+            <div class="text-2xl font-bold pl-5">
                 NewsFlash
             </div>
             <!-- Menu Items -->
-            <div class=" hidden md:flex space-x-6 lg:flex xl:flex">    
+            <div class=" hidden space-x-6 lg:flex xl:flex">    
                 <a href="#">Home</a>
                 <a href="#">Categories</a>
                 <a href="#">Reviews</a>
@@ -32,9 +32,13 @@
             </div>
 
             <!-- tools -->
-            <div class="flex text-white">
-                <i class="fa-solid fa-brightness-low"></i>
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="space-x-5 pr-5 hidden lg:flex xl:flex">
+                <i class="fa-light fa-brightness-low"></i>
+                <img src="assets/images/light1.png" alt="" class="w-6 h-7">
+                <img src="assets/images/search1.png" alt="" class="w-6 h-7">
+                <a href="#" class="p-2">Sign in</a>
+                <a href="#" class="border rounded p-2">Sign up</a>
+                
             </div>
 
         </div>
@@ -42,6 +46,43 @@
     <!-- Search -->
 
     <!-- Featured articles -->
+    <div class="flex container w-full mt-4 ml-3">
+        <!-- Right side -->
+        <div class=" w-4/5 mr-6">
+            <div class="flex  text-white items-center h-14 mb-6 bg-gray-900">
+                <a href="#" class="border-2 p-3 uppercase">breaking news</a>
+                <span class="pl-6 text-lg">Apple announces a new partnership...</span>
+            </div>
+
+            <!-- images -->
+            <div class="flex mt-4">
+                <div class="w-1/2 mr-5 h-80 relative flex-col">
+                    <img src="assets/images/featured/featured-1.jpg" alt="" class="w-full h-full" style="object-fit:cover;">
+                    <span class="bg-black w-full h-24 absolute top-56 opacity-50 hover:opacity-80"></span>
+                    <div class="flex justify-between text-white relative bottom-20 text-xs">
+                        <span class="w-2/4 h-4">Dec 5th 2021</span>
+                        <span class="w-2/4 h-4">kdfkdsjf</span>
+                        <span class="w-2/4 h-4">sdfsdf</span>
+                    </div>
+                </div>
+                <div class="w-1/2 h-80 relative ">
+                    <img src="assets/images/featured/featured-2.jpg" alt="" class="w-full h-full" style="object-fit:cover;">
+                    <span class="bg-black w-full h-24 absolute top-56 opacity-50 hover:opacity-80"></span>
+                    <div class="flex justify-between text-gray-500">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left Side -->
+        <div class="flex w-2/5 bg-gray-900 mr-6">
+
+        </div>
+
+    </div>
     
     <!-- Quick read -->
 
