@@ -13,31 +13,31 @@
     <!-- Custom styles -->
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
-<body class="bg-gray-500 text-white">
+<body class="text-white bg-gray-500">
     <!-- Header -->
-    <nav class="relative container w-full xl:w-full">
-        <div class="flex items-center justify-between bg-gray-900 text-white h-20">
-            <div class="text-2xl font-bold pl-5">
+    <nav class="container sticky top-0 z-10 w-full">
+        <div class="flex items-center justify-between h-20 text-white bg-gray-900">
+            <div class="pl-5 text-2xl font-bold">
                 NewsFlash
             </div>
             <!-- Menu Items -->
-            <div class=" hidden space-x-6 lg:flex xl:flex text-lg text-gray-400">    
-                <a href="#">Home</a>
-                <a href="#">Categories</a>
-                <a href="#">Reviews</a>
-                <a href="#">News</a>
-                <a href="#">Membership</a>
-                <a href="#">Contact</a>
+            <div class="hidden space-x-6 text-lg text-gray-400 lg:flex xl:flex ">    
+                <a href="#" class="text-white">Home</a>
+                <a href="#" class="hover:text-white">Categories</a>
+                <a href="#" class="hover:text-white">Reviews</a>
+                <a href="#" class="hover:text-white">News</a>
+                <a href="#" class="hover:text-white">Membership</a>
+                <a href="#" class="hover:text-white">Contact</a>
             </div>
 
             <!-- tools -->
-            <div class="space-x-5 pr-5 hidden lg:flex xl:flex">
-                <i class="fa-light fa-brightness-low"></i>
-                <img src="assets/images/light1.png" alt="" class="w-6 h-7">
-                <img src="assets/images/search1.png" alt="" class="w-6 h-7">
-                <a href="#" class="p-2">Sign in</a>
-                <a href="#" class="border rounded p-2">Sign up</a>
+            <div class="items-center justify-center hidden pr-5 space-x-5 text-gray-400 lg:flex xl:flex">
+                <i class="opacity-50 cursor-pointer fa-solid fa-sun hover:opacity-90"></i>                <!-- <img src="assets/images/light1.png" alt="" class="w-6 h-7"> -->
+                <i class="opacity-50 cursor-pointer fa-solid fa-magnifying-glass hover:opacity-90 "></i>   
+                <a href="#" class="p-2 hover:text-white">Sign in</a>
+                <a href="#" class="p-2 border rounded hover:text-white">Sign up</a>
                 
             </div>
 
@@ -46,11 +46,11 @@
     <!-- Search -->
 
     <!-- Featured articles -->
-    <div class="flex container w-full mt-4 ml-3 mb-20">
+    <div class="container flex w-full mt-4 mb-10 ml-3">
         <!-- Right side -->
-        <div class=" w-4/5 mr-6">
-            <div class="flex  text-white items-center h-14 mb-6 bg-gray-900">
-                <a href="#" class="border-2 p-3 uppercase">breaking news</a>
+        <div class="w-4/5 mr-6 ">
+            <div class="flex items-center mb-6 text-white bg-gray-900 h-14">
+                <a href="#" class="p-3 uppercase border-2">breaking news</a>
                 <span class="pl-6 text-lg">Apple announces a new partnership...</span>
             </div>
 
@@ -58,107 +58,107 @@
 
                 <!-- two Images -->
             <div class="flex mt-4 mb-7">
-                <div class="w-1/2 mr-5 h-80 relative flex-col">
+                <div class="relative flex-col w-1/2 mr-5 h-80">
                     <img src="assets/images/featured/featured-1.jpg" alt="" class="w-full h-full" style="object-fit:cover;">
-                    <span class="bg-black w-full h-24 absolute top-56 opacity-50 hover:opacity-80"></span>
-                    <div class="flex  relative bottom-20 text-sm text-gray-300 ml-4">
+                    <span class="absolute w-full h-24 bg-black opacity-50 top-56 hover:opacity-80"></span>
+                    <div class="relative flex ml-4 text-sm text-gray-300 bottom-20">
                         <span class="w-2/4 h-4">Dec 5th 2021</span>
                         <span class="w-2/4 h-4 -ml-12">8 Min read</span>
-                        <span class="w-2 h-2 bg-gray-400 rotate-45 absolute left-28 top-2"></span>
+                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-28 top-2"></span>
                     </div>
-                    <span class="uppercase bg-black p-2  text-xs relative -top-80" style="left:300px">Technology</span>
-                    <div class="relative text-3xl font-bold -top-20 ml-4">
+                    <span class="relative p-2 text-xs uppercase bg-black -top-80" style="left:300px">Technology</span>
+                    <div class="relative ml-4 text-3xl font-bold -top-20">
                         <h1>Is VR the future?</h1>
                     </div>
                 </div>
-                <div class="w-1/2 h-80 relative ">
+                <div class="relative w-1/2 h-80 ">
                     <img src="assets/images/featured/featured-2.jpg" alt="" class="w-full h-full" style="object-fit:cover;">
-                    <span class="bg-black w-full h-24 absolute top-56 opacity-50 hover:opacity-80"></span>
-                    <div class="flex  relative bottom-20 text-sm text-gray-300 ml-4">
+                    <span class="absolute w-full h-24 bg-black opacity-50 top-56 hover:opacity-80"></span>
+                    <div class="relative flex ml-4 text-sm text-gray-300 bottom-20">
                         <span class="w-2/4 h-4">Dec 6th 2021</span>
                         <span class="w-2/4 h-4 -ml-12">4 Min read</span>
-                        <span class="w-2 h-2 bg-gray-400 rotate-45 absolute left-28 top-2"></span>
+                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-28 top-2"></span>
                     </div>
-                    <span class="uppercase bg-black px-2 py-3 text-xs relative -top-80" style="left:340px">Food</span>
-                    <div class="relative text-3xl font-bold -top-20 ml-4">
+                    <span class="relative px-2 py-3 text-xs uppercase bg-black -top-80" style="left:340px">Food</span>
+                    <div class="relative ml-4 text-3xl font-bold -top-20">
                         <h1>Find dining 101</h1>
                     </div>
                 </div>
             </div>
 
             <!-- big Image -->
-            <div class="w-full h-80 relative">
+            <div class="relative w-full h-80">
                 <img src="assets/images/featured/featured-3.jpg" alt="" class="w-full h-full" style="object-fit:cover">
-                <span class="bg-black w-full h-24 absolute top-56 opacity-50 hover:opacity-80"></span>
-                <div class="flex  relative bottom-20 text-sm text-gray-300 ml-4">
+                <span class="absolute w-full h-24 bg-black opacity-50 top-56 hover:opacity-80"></span>
+                <div class="relative flex ml-4 text-sm text-gray-300 bottom-20">
                     <span class="w-2/4 h-4">Dec 6th 2021</span>
                     <span class="w-2/4 h-4 -ml-56">4 Min read</span>
-                    <span class="w-2 h-2 bg-gray-400 rotate-45 absolute left-32 top-2"></span>
+                    <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-32 top-2"></span>
                 </div>
-                <span class="uppercase bg-black px-2 py-3 text-xs relative -top-80" style="left:743px">health</span>
-                <div class="relative text-3xl font-bold -top-20 ml-4">
+                <span class="relative px-2 py-3 text-xs uppercase bg-black -top-80" style="left:743px">health</span>
+                <div class="relative ml-4 text-3xl font-bold -top-20">
                     <h1>Natural fat burner</h1>
                 </div>
             </div>
         </div>
 
         <!-- Left Side -->
-        <div class="flex w-2/5 bg-gray-900 mr-6">
-            <div class=" w-full h-full flex-col justify-center items-center text-white">
-                <h1 class="text-2xl ml-28 mt-10 font-bold mb-8">Trending news</h1>
-                <div class="flex ml-7 w-4/5 h-28 border-b-2 my-4 relative cursor-pointer hover:text-gray-500">
+        <div class="flex w-2/5 mr-6 bg-gray-900">
+            <div class="flex-col items-center justify-center w-full h-full text-white">
+                <h1 class="mt-10 mb-8 text-2xl font-bold ml-28">Trending news</h1>
+                <div class="relative flex w-4/5 my-4 border-b-2 cursor-pointer ml-7 h-28 hover:text-gray-500">
                     <img src="assets/images/trending/trending_1.jpg" alt="" class="w-24 h-24">
-                    <div class="flex bottom-20 text-sm text-gray-300 ml-4 absolute left-28 top-5">
+                    <div class="absolute flex ml-4 text-sm text-gray-300 bottom-20 left-28 top-5">
                         <span class="mr-7">23 Dec 2021</span>
                         <span class="ml-5">3 Min read</span>
-                        <span class="w-2 h-2 bg-gray-400 rotate-45 absolute left-24 top-2"></span>
+                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-24 top-2"></span>
                     </div>
-                    <span class="uppercase bg-gray-900 w-7 h-7 px-1 py-1 relative text-white center font-bold text-1xl rounded-full" style="top:-7px; left:-100px;">01</span>                    <div class="relative text-1xl font-bold top-14">
+                    <span class="relative px-1 py-1 font-bold text-white uppercase bg-gray-900 rounded-full w-7 h-7 center text-1xl" style="top:-7px; left:-100px;">01</span>                    <div class="relative font-bold text-1xl top-14">
                         <h1>Sample article title</h1>
                     </div>
                 </div>
-                <div class="flex ml-7 w-4/5 h-28 border-b-2 my-4 relative cursor-pointer hover:text-gray-500">
+                <div class="relative flex w-4/5 my-4 border-b-2 cursor-pointer ml-7 h-28 hover:text-gray-500">
                     <img src="assets/images/trending/trending_2.jpg" alt="" class="w-24 h-24">
-                    <div class="flex bottom-20 text-sm text-gray-300 ml-4 absolute left-28 top-5">
+                    <div class="absolute flex ml-4 text-sm text-gray-300 bottom-20 left-28 top-5">
                         <span class="mr-7">23 Dec 2021</span>
                         <span class="ml-5">3 Min read</span>
-                        <span class="w-2 h-2 bg-gray-400 rotate-45 absolute left-24 top-2"></span>
+                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-24 top-2"></span>
                     </div>
-                    <span class="uppercase bg-gray-900 w-7 h-7 px-1 py-1 relative text-white center font-bold text-1xl rounded-full" style="top:-7px; left:-100px;">02</span>
-                    <div class="relative text-1xl font-bold top-14">
+                    <span class="relative px-1 py-1 font-bold text-white uppercase bg-gray-900 rounded-full w-7 h-7 center text-1xl" style="top:-7px; left:-100px;">02</span>
+                    <div class="relative font-bold text-1xl top-14">
                         <h1>Sample article title</h1>
                     </div>
                 </div>
-                <div class="flex ml-7 w-4/5 h-28 border-b-2 my-4 relative cursor-pointer hover:text-gray-500">
+                <div class="relative flex w-4/5 my-4 border-b-2 cursor-pointer ml-7 h-28 hover:text-gray-500">
                     <img src="assets/images/trending/trending_3.jpg" alt="" class="w-24 h-24">
-                    <div class="flex bottom-20 text-sm text-gray-300 ml-4 absolute left-28 top-5">
+                    <div class="absolute flex ml-4 text-sm text-gray-300 bottom-20 left-28 top-5">
                         <span class="mr-7">23 Dec 2021</span>
                         <span class="ml-5">3 Min read</span>
-                        <span class="w-2 h-2 bg-gray-400 rotate-45 absolute left-24 top-2"></span>
+                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-24 top-2"></span>
                     </div>
-                    <span class="uppercase bg-gray-900 w-7 h-7 px-1 py-1 relative text-white center font-bold text-1xl rounded-full" style="top:-7px; left:-100px;">03</span>                    <div class="relative text-1xl font-bold top-14">
+                    <span class="relative px-1 py-1 font-bold text-white uppercase bg-gray-900 rounded-full w-7 h-7 center text-1xl" style="top:-7px; left:-100px;">03</span>                    <div class="relative font-bold text-1xl top-14">
                         <h1>Sample article title</h1>
                     </div>
                 </div>
-                <div class="flex ml-7 w-4/5 h-28 border-b-2 my-4 relative cursor-pointer hover:text-gray-500">
+                <div class="relative flex w-4/5 my-4 border-b-2 cursor-pointer ml-7 h-28 hover:text-gray-500">
                     <img src="assets/images/trending/trending_4.jpg" alt="" class="w-24 h-24">
-                    <div class="flex bottom-20 text-sm text-gray-300 ml-4 absolute left-28 top-5">
+                    <div class="absolute flex ml-4 text-sm text-gray-300 bottom-20 left-28 top-5">
                         <span class="mr-7">23 Dec 2021</span>
                         <span class="ml-5">3 Min read</span>
-                        <span class="w-2 h-2 bg-gray-400 rotate-45 absolute left-24 top-2"></span>
+                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-24 top-2"></span>
                     </div>
-                    <span class="uppercase bg-gray-900 w-7 h-7 px-1 py-1 relative text-white center font-bold text-1xl rounded-full" style="top:-7px; left:-100px;">04</span>                    <div class="relative text-1xl font-bold top-14">
+                    <span class="relative px-1 py-1 font-bold text-white uppercase bg-gray-900 rounded-full w-7 h-7 center text-1xl" style="top:-7px; left:-100px;">04</span>                    <div class="relative font-bold text-1xl top-14">
                         <h1>Sample article title</h1>
                     </div>
                 </div>
-                <div class="flex ml-7 w-4/5 h-28 my-4 relative cursor-pointer hover:text-gray-500">
+                <div class="relative flex w-4/5 my-4 cursor-pointer ml-7 h-28 hover:text-gray-500">
                     <img src="assets/images/trending/trending_5.jpg" alt="" class="w-24 h-24">
-                    <div class="flex bottom-20 text-sm text-gray-300 ml-4 absolute left-28 top-5">
+                    <div class="absolute flex ml-4 text-sm text-gray-300 bottom-20 left-28 top-5">
                         <span class="mr-7">23 Dec 2021</span>
                         <span class="ml-5">3 Min read</span>
-                        <span class="w-2 h-2 bg-gray-400 rotate-45 absolute left-24 top-2"></span>
+                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-24 top-2"></span>
                     </div>
-                    <span class="uppercase bg-gray-900 w-7 h-7 px-1 py-1 relative text-white center font-bold text-1xl rounded-full" style="top:-7px; left:-100px;">05</span>                    <div class="relative text-1xl font-bold top-14 ">
+                    <span class="relative px-1 py-1 font-bold text-white uppercase bg-gray-900 rounded-full w-7 h-7 center text-1xl" style="top:-7px; left:-100px;">05</span>                    <div class="relative font-bold text-1xl top-14 ">
                         <h1 class="hover:text-gray-200">Sample article title</h1>
                     </div>
                 </div>
@@ -166,11 +166,101 @@
         </div>
 
     </div>
-    
-    <!-- Quick read -->
-
+        <!-- Quick read -->
+        <div class="container w-full mb-20 ml-3">
+            <div class="w-full py-10 font-bold bg-gray-900">
+                <h1 class="pl-5 text-2xl pt- h-28 pt-7">Quick read</h1>
+                <h1 class="pl-10 text-3xl uppercase opacity-50 " style="margin-top:-70px ;">quick read</h1>
+            </div>
+            
+            <div class="relative flex">
+                <span class="absolute z-10 w-10 h-10 bg-gray-500 top-32">
+                    <i class="relative fa-solid fa-angle-left fa-2x left-3 top-1"></i>
+                </span>
+                <span class="absolute right-0 z-10 w-10 h-10 bg-gray-500 top-32">
+                    <i class="relative fa-solid fa-angle-right fa-2x top-1 left-3"></i>
+                </span>
+                <div class="relative w-1/2 mr-5 h-80">
+                    <img src="assets/images/featured/featured-2.jpg" alt="" class="w-full h-full" style="object-fit:cover;">
+                    <span class="absolute w-full h-24 bg-black opacity-50 top-56 hover:opacity-80"></span>
+                    <div class="relative flex ml-4 text-sm text-gray-300 bottom-20">
+                        <span class="w-2/4 h-4">Dec 6th 2021</span>
+                        <span class="w-2/4 h-4 -ml-12">4 Min read</span>
+                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-28 top-2"></span>
+                    </div>
+                    <span class="relative px-2 py-3 text-xs uppercase bg-black -top-80" style="left:340px">Food</span>
+                    <div class="relative ml-4 text-3xl font-bold -top-20">
+                        <h1>Find dining 101</h1>
+                    </div>
+                </div>
+                <div class="relative w-1/2 mr-5 h-80 ">
+                    <img src="assets/images/featured/featured-2.jpg" alt="" class="w-full h-full" style="object-fit:cover;">
+                    <span class="absolute w-full h-24 bg-black opacity-50 top-56 hover:opacity-80"></span>
+                    <div class="relative flex ml-4 text-sm text-gray-300 bottom-20">
+                        <span class="w-2/4 h-4">Dec 6th 2021</span>
+                        <span class="w-2/4 h-4 -ml-12">4 Min read</span>
+                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-28 top-2"></span>
+                    </div>
+                    <span class="relative px-2 py-3 text-xs uppercase bg-black -top-80" style="left:340px">Food</span>
+                    <div class="relative ml-4 text-3xl font-bold -top-20">
+                        <h1>Find dining 101</h1>
+                    </div>
+                </div>
+                <div class="relative w-1/2 h-80">
+                    <img src="assets/images/featured/featured-2.jpg" alt="" class="w-full h-full" style="object-fit:cover;">
+                    <span class="absolute w-full h-24 bg-black opacity-50 top-56 hover:opacity-80"></span>
+                    <div class="relative flex ml-4 text-sm text-gray-300 bottom-20">
+                        <span class="w-2/4 h-4">Dec 6th 2021</span>
+                        <span class="w-2/4 h-4 -ml-12">4 Min read</span>
+                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-28 top-2"></span>
+                    </div>
+                    <span class="relative px-2 py-3 text-xs uppercase bg-black -top-80" style="left:340px">Food</span>
+                    <div class="relative ml-4 text-3xl font-bold -top-20">
+                        <h1>Find dining 101</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- Older posts -->
-    
+    <div class="container w-full mb-20 ml-3">
+        <div class="w-full py-10 font-bold bg-gray-900">
+            <h1 class="pl-5 text-2xl pt- h-28 pt-7">Older post</h1>
+            <h1 class="pl-10 text-3xl uppercase opacity-50 " style="margin-top:-68px ;">older post</h1>
+        </div>
+
+        <div class="w-full h-full bg-blue-500">
+            <ul class="w-full h-full bg-green-200">
+                <li class="float-left mr-5 bg-gray-700 h-72" style="width:49%; box-sizing:border-box;">
+                    <div class="w-full h-full">
+                        <img class="w-2/5 h-full" src="assets/images/older_posts/older_posts_1.jpg">
+                        <span class="w-2/3 h-full">
+                            <div class="relative flex ml-4 text-sm text-gray-300 bottom-20">
+                                <span class="w-2/4 h-4">Dec 6th 2021</span>
+                                <span class="w-2/4 h-4 -ml-12">4 Min read</span>
+                                <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-28 top-2"></span>
+                            </div>
+                            <span class="relative px-2 py-3 text-xs uppercase bg-black -top-80" style="left:340px">Food</span>
+                            <div class="relative ml-4 text-3xl font-bold -top-20">
+                                <h1>Find dining 101</h1>
+                            </div>
+                        </span>
+                    </div>
+                </li>
+                <li class="float-left bg-green-400 h-60" style="width:49%; box-sizing:border-box;">
+                    <div class="w-full h-full">
+                        <img>
+                        <span></span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img>
+                        <span></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- Popular tags -->
 
     <!-- Newsletter -->
