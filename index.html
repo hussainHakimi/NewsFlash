@@ -14,320 +14,50 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
-<body class="text-white bg-gray-500" style="max-width:1440px">
+<body class="bg-cyan-400">
     <!-- Header -->
-    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800 mx-auto">
-        <div class="container flex flex-wrap items-center justify-between mx-auto">
-            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-            </a>
-            <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-            <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
-                <div class="flex flex-col mt-4 space-x-6 text-lg text-gray-400 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium lg:flex xl:flex md:flex">
-                    <a href="#" class="text-white">Home</a>
-                    <a href="#" class="hover:text-white">Categories</a>
-                    <a href="#" class="hover:text-white">Reviews</a>
-                    <a href="#" class="hover:text-white">News</a>
-                    <a href="#" class="hover:text-white">Membership</a>
-                    <a href="#" class="hover:text-white">Contact</a>
-                </div>
-            </div>
-            <div class="items-center justify-center hidden pr-5 space-x-5 text-gray-400 lg:flex xl:flex md:order-2">
-                <i class="opacity-50 cursor-pointer fa-solid fa-sun hover:opacity-90"></i>               
-                <i class="opacity-50 cursor-pointer fa-solid fa-magnifying-glass hover:opacity-90 "></i>   
-                <a href="#" class="p-2 hover:text-white">Sign in</a>
-                <a href="#" class="p-2 border rounded hover:text-white">Sign up</a>
-            </div>
+    <nav class="sticky p-5 bg-white shadow lg:flex lg:justify-between lg:items-center">
+        <div class="flex items-center justify-between">
+            <span class="text-2xl font-bold cursor-pointer">
+            NewsFlash
+            </span>
+            <span class="flex items-center space-x-3 text-3xl cursor-pointer lg:hidden">
+                <i class="cursor-pointer fa-solid fa-sun hover:opacity-90 fa-xs"></i>               
+                <i class="cursor-pointer fa-solid fa-magnifying-glass hover:opacity-90 fa-xs"></i>
+                <i class="fa-solid fa-bars" name="menu" onclick="menu(this)"></i>
+            </span>
+        </div>
+        <ul class="space-x-6 space-y-3 lg:flex lg:items-center lg:my-0 z-[-1] lg:z-auto lg:static absolute bg-white w-full left-0 lg:w-atuo py-4 lg:pl-0 pl-7 opacity-0 lg:opacity-100 top-[-400px] transition-all ease-in duration-500">
+            <li>
+                <a href="#" class="text-xl duration-500 hover:text-cyan-500">Home</a>
+            </li>
+            <li>
+                <a href="#" class="text-xl duration-500 hover:text-cyan-500">Home23</a>
+            </li>
+            <li>
+                <a href="#" class="text-xl duration-500 hover:text-cyan-500">Home23</a>
+            </li>
+            <li>
+                <a href="#" class="text-xl duration-500 hover:text-cyan-500">Home23</a>
+            </li>
+            <li>
+                <a href="#" class="text-xl duration-500 hover:text-cyan-500">Hom23e</a>
+            </li>
+            <li>
+                <a href="#" class="text-xl duration-500 hover:text-cyan-500">Home23</a>
+            </li>
+        </ul>
+        <div class="items-center justify-center hidden pr-5 space-x-5 text-gray-400 lg:flex xl:flex md:order-2">
+            <i class="cursor-pointer fa-solid fa-sun hover:opacity-90"></i>               
+            <i class="cursor-pointer fa-solid fa-magnifying-glass hover:opacity-90"></i>
+            <a href="#" class="w-14 hover:text-white">Sign in</a>
+            <a href="#" class="border rounded w-14 hover:text-white">Sign up</a>
         </div>
     </nav>
-    
     <!-- Search -->
-
+    
     <!-- Featured articles -->
-    <!-- <div class="container flex mt-4 mb-10 ml-3"> -->
-    <div class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800 mx-auto flex">    
-        <!-- Right side -->
-        <div class="w-4/5 mr-6 ">
-            <div class="flex items-center mb-6 text-white bg-gray-900 h-14">
-                <a href="#" class="p-3 uppercase border-2">breaking news</a>
-                <span class="pl-6 text-lg">Apple announces a new partnership...</span>
-            </div>
-
-            <!-- images -->
-
-                <!-- two Images -->
-            <div class="flex mt-4 mb-7">
-                <div class="relative flex-col w-1/2 mr-5 h-80">
-                    <img src="assets/images/featured/featured-1.jpg" alt="" class="w-full h-full" style="object-fit:cover;">
-                    <span class="absolute w-full h-24 bg-black opacity-50 top-56 hover:opacity-80"></span>
-                    <div class="relative flex ml-4 text-sm text-gray-300 bottom-20">
-                        <span class="w-2/4 h-4">Dec 5th 2021</span>
-                        <span class="w-2/4 h-4 -ml-12">8 Min read</span>
-                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-28 top-2"></span>
-                    </div>
-                    <span class="relative p-2 text-xs uppercase bg-black -top-80" style="left:300px">Technology</span>
-                    <div class="relative ml-4 text-3xl font-bold -top-20">
-                        <h1>Is VR the future?</h1>
-                    </div>
-                </div>
-                <div class="relative w-1/2 h-80 ">
-                    <img src="assets/images/featured/featured-2.jpg" alt="" class="w-full h-full" style="object-fit:cover;">
-                    <span class="absolute w-full h-24 bg-black opacity-50 top-56 hover:opacity-80"></span>
-                    <div class="relative flex ml-4 text-sm text-gray-300 bottom-20">
-                        <span class="w-2/4 h-4">Dec 6th 2021</span>
-                        <span class="w-2/4 h-4 -ml-12">4 Min read</span>
-                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-28 top-2"></span>
-                    </div>
-                    <span class="relative px-2 py-3 text-xs uppercase bg-black -top-80" style="left:340px">Food</span>
-                    <div class="relative ml-4 text-3xl font-bold -top-20">
-                        <h1>Find dining 101</h1>
-                    </div>
-                </div>
-            </div>
-
-            <!-- big Image -->
-            <div class="relative w-full h-80">
-                <img src="assets/images/featured/featured-3.jpg" alt="" class="w-full h-full" style="object-fit:cover">
-                <span class="absolute w-full h-24 bg-black opacity-50 top-56 hover:opacity-80"></span>
-                <div class="relative flex ml-4 text-sm text-gray-300 bottom-20">
-                    <span class="w-2/4 h-4">Dec 6th 2021</span>
-                    <span class="w-2/4 h-4 -ml-56">4 Min read</span>
-                    <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-32 top-2"></span>
-                </div>
-                <span class="relative px-2 py-3 text-xs uppercase bg-black -top-80" style="left:743px">health</span>
-                <div class="relative ml-4 text-3xl font-bold -top-20">
-                    <h1>Natural fat burner</h1>
-                </div>
-            </div>
-        </div>
-
-        <!-- Left Side -->
-        <div class="flex w-2/5 mr-6 bg-gray-900">
-            <div class="flex-col items-center justify-center w-full h-full text-white">
-                <h1 class="mt-10 mb-8 text-2xl font-bold ml-28">Trending news</h1>
-                <div class="relative flex w-4/5 my-4 border-b-2 cursor-pointer ml-7 h-28 hover:text-gray-500">
-                    <img src="assets/images/trending/trending_1.jpg" alt="" class="w-24 h-24">
-                    <div class="absolute flex ml-4 text-sm text-gray-300 bottom-20 left-28 top-5">
-                        <span class="mr-7">23 Dec 2021</span>
-                        <span class="ml-5">3 Min read</span>
-                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-24 top-2"></span>
-                    </div>
-                    <span class="relative px-1 py-1 font-bold text-white uppercase bg-gray-900 rounded-full w-7 h-7 center text-1xl" style="top:-7px; left:-100px;">01</span>                    <div class="relative font-bold text-1xl top-14">
-                        <h1>Sample article title</h1>
-                    </div>
-                </div>
-                <div class="relative flex w-4/5 my-4 border-b-2 cursor-pointer ml-7 h-28 hover:text-gray-500">
-                    <img src="assets/images/trending/trending_2.jpg" alt="" class="w-24 h-24">
-                    <div class="absolute flex ml-4 text-sm text-gray-300 bottom-20 left-28 top-5">
-                        <span class="mr-7">23 Dec 2021</span>
-                        <span class="ml-5">3 Min read</span>
-                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-24 top-2"></span>
-                    </div>
-                    <span class="relative px-1 py-1 font-bold text-white uppercase bg-gray-900 rounded-full w-7 h-7 center text-1xl" style="top:-7px; left:-100px;">02</span>
-                    <div class="relative font-bold text-1xl top-14">
-                        <h1>Sample article title</h1>
-                    </div>
-                </div>
-                <div class="relative flex w-4/5 my-4 border-b-2 cursor-pointer ml-7 h-28 hover:text-gray-500">
-                    <img src="assets/images/trending/trending_3.jpg" alt="" class="w-24 h-24">
-                    <div class="absolute flex ml-4 text-sm text-gray-300 bottom-20 left-28 top-5">
-                        <span class="mr-7">23 Dec 2021</span>
-                        <span class="ml-5">3 Min read</span>
-                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-24 top-2"></span>
-                    </div>
-                    <span class="relative px-1 py-1 font-bold text-white uppercase bg-gray-900 rounded-full w-7 h-7 center text-1xl" style="top:-7px; left:-100px;">03</span>                    <div class="relative font-bold text-1xl top-14">
-                        <h1>Sample article title</h1>
-                    </div>
-                </div>
-                <div class="relative flex w-4/5 my-4 border-b-2 cursor-pointer ml-7 h-28 hover:text-gray-500">
-                    <img src="assets/images/trending/trending_4.jpg" alt="" class="w-24 h-24">
-                    <div class="absolute flex ml-4 text-sm text-gray-300 bottom-20 left-28 top-5">
-                        <span class="mr-7">23 Dec 2021</span>
-                        <span class="ml-5">3 Min read</span>
-                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-24 top-2"></span>
-                    </div>
-                    <span class="relative px-1 py-1 font-bold text-white uppercase bg-gray-900 rounded-full w-7 h-7 center text-1xl" style="top:-7px; left:-100px;">04</span>                    <div class="relative font-bold text-1xl top-14">
-                        <h1>Sample article title</h1>
-                    </div>
-                </div>
-                <div class="relative flex w-4/5 my-4 cursor-pointer ml-7 h-28 hover:text-gray-500">
-                    <img src="assets/images/trending/trending_5.jpg" alt="" class="w-24 h-24">
-                    <div class="absolute flex ml-4 text-sm text-gray-300 bottom-20 left-28 top-5">
-                        <span class="mr-7">23 Dec 2021</span>
-                        <span class="ml-5">3 Min read</span>
-                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-24 top-2"></span>
-                    </div>
-                    <span class="relative px-1 py-1 font-bold text-white uppercase bg-gray-900 rounded-full w-7 h-7 center text-1xl" style="top:-7px; left:-100px;">05</span>                    <div class="relative font-bold text-1xl top-14 ">
-                        <h1 class="hover:text-gray-200">Sample article title</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-        <!-- Quick read -->
-        <div class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800 mx-auto">
-            <div class="w-full py-10 font-bold bg-gray-900">
-                <h1 class="pl-5 text-2xl pt- h-28 pt-7">Quick read</h1>
-                <h1 class="pl-10 text-3xl uppercase opacity-50 " style="margin-top:-70px ;">quick read</h1>
-            </div>
-            
-            <div class="relative flex">
-                <span class="absolute z-10 w-10 h-10 bg-gray-500 top-32">
-                    <i class="relative fa-solid fa-angle-left fa-2x left-3 top-1"></i>
-                </span>
-                <span class="absolute right-0 z-10 w-10 h-10 bg-gray-500 top-32">
-                    <i class="relative fa-solid fa-angle-right fa-2x top-1 left-3"></i>
-                </span>
-                <div class="relative w-1/2 mr-5 h-80">
-                    <img src="assets/images/quick_read/quick_read_1.jpg" alt="" class="w-full h-full" style="object-fit:cover;">
-                    <span class="absolute w-full h-24 bg-black opacity-50 top-56 hover:opacity-80"></span>
-                    <div class="relative flex ml-4 text-sm text-gray-300 bottom-20">
-                        <span class="w-2/4 h-4">Dec 6th 2021</span>
-                        <span class="w-2/4 h-4 -ml-12">4 Min read</span>
-                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-28 top-2"></span>
-                    </div>
-                    <div class="relative ml-4 text-3xl font-bold -top-20">
-                        <h1>Find dining 101</h1>
-                    </div>
-                </div>
-                <div class="relative w-1/2 mr-5 h-80 ">
-                    <img src="assets/images/older_posts/older_posts_2.jpg" alt="" class="w-full h-full" style="object-fit:cover;">
-                    <span class="absolute w-full h-24 bg-black opacity-50 top-56 hover:opacity-80"></span>
-                    <div class="relative flex ml-4 text-sm text-gray-300 bottom-20">
-                        <span class="w-2/4 h-4">Dec 6th 2021</span>
-                        <span class="w-2/4 h-4 -ml-12">4 Min read</span>
-                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-28 top-2"></span>
-                    </div>
-                    <div class="relative ml-4 text-3xl font-bold -top-20">
-                        <h1>Find dining 101</h1>
-                    </div>
-                </div>
-                <div class="relative w-1/2 h-80">
-                    <img src="assets/images/quick_read/quick_read_3.jpg" alt="" class="w-full h-full" style="object-fit:cover;">
-                    <span class="absolute w-full h-24 bg-black opacity-50 top-56 hover:opacity-80"></span>
-                    <div class="relative flex ml-4 text-sm text-gray-300 bottom-20">
-                        <span class="w-2/4 h-4">Dec 6th 2021</span>
-                        <span class="w-2/4 h-4 -ml-12">4 Min read</span>
-                        <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-28 top-2"></span>
-                    </div>
-                    <div class="relative ml-4 text-3xl font-bold -top-20">
-                        <h1>Find dining 101</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <!-- Older posts -->
-    <div class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800 mx-auto">
-        <div class="w-full py-10 font-bold bg-gray-900">
-            <h1 class="pl-5 text-2xl pt- h-28 pt-7">Older post</h1>
-            <h1 class="pl-10 text-3xl uppercase opacity-50 " style="margin-top:-68px ;">older post</h1>
-        </div>
-
-        <div class="w-full h-full bg-blue-500">
-            <ul class="w-full h-full bg-gray-900" style="height:930px ;">
-                <li class="float-left mb-5 mr-5 bg-gray-700 h-72" style="width:49%; box-sizing:border-box;">
-                    <div class="w-full h-full">
-                        <img class="w-2/5 h-full" src="assets/images/older_posts/older_posts_1.jpg">
-                        <span class="relative w-2/3 h-full">
-                            <div class="relative flex ml-4 text-sm text-gray-300 bottom-64 left-64">
-                                <span class="w-2/4 h-4">Dec 6th 2021</span>
-                                <span class="w-2/4 h-4 -ml-40">4 Min read</span>
-                                <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-28 top-2"></span>
-                            </div>
-                            <div class="relative ml-4 text-3xl font-bold -top-60 left-64">
-                                <h1>Find dining 101</h1>
-                            </div>
-                            <span class="absolute w-3/6 -top-44" style="font-size:1.3rem; left:270px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem repudiandae iusto provident. Quo, dicta quasi.</span>
-                        </span>
-                    </div>
-                </li>
-                <li class="float-left mb-5 bg-gray-700 h-72" style="width:49%; box-sizing:border-box;">
-                    <div class="w-full h-full">
-                        <img class="w-2/5 h-full" src="assets/images/older_posts/older_posts_2.jpg">
-                        <span class="relative w-2/3 h-full">
-                            <div class="relative flex ml-4 text-sm text-gray-300 bottom-64 left-64">
-                                <span class="w-2/4 h-4">Dec 6th 2021</span>
-                                <span class="w-2/4 h-4 -ml-40">4 Min read</span>
-                                <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-28 top-2"></span>
-                            </div>
-                            <div class="relative ml-4 text-3xl font-bold -top-60 left-64">
-                                <h1>Find dining 101</h1>
-                            </div>
-                            <span class="absolute w-3/6 -top-44" style="font-size:1.3rem; left:270px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem repudiandae iusto provident. Quo, dicta quasi.</span>
-                        </span>
-                    </div>
-                </li>
-                <li class="float-left mb-5 mr-5 bg-gray-700 h-72" style="width:49%; box-sizing:border-box;">
-                    <div class="w-full h-full">
-                        <img class="w-2/5 h-full" src="assets/images/older_posts/older_posts_3.jpg">
-                        <span class="relative w-2/3 h-full">
-                            <div class="relative flex ml-4 text-sm text-gray-300 bottom-64 left-64">
-                                <span class="w-2/4 h-4">Dec 6th 2021</span>
-                                <span class="w-2/4 h-4 -ml-40">4 Min read</span>
-                                <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-28 top-2"></span>
-                            </div>
-                            <div class="relative ml-4 text-3xl font-bold -top-60 left-64">
-                                <h1>Find dining 101</h1>
-                            </div>
-                            <span class="absolute w-3/6 -top-44" style="font-size:1.3rem; left:270px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem repudiandae iusto provident. Quo, dicta quasi.</span>
-                        </span>
-                    </div>
-                </li>
-                <li class="float-left mb-5 bg-gray-700 h-72" style="width:49%; box-sizing:border-box;">
-                    <div class="w-full h-full">
-                        <img class="w-2/5 h-full" src="assets/images/older_posts/older_posts_4.jpg">
-                        <span class="relative w-2/3 h-full">
-                            <div class="relative flex ml-4 text-sm text-gray-300 bottom-64 left-64">
-                                <span class="w-2/4 h-4">Dec 6th 2021</span>
-                                <span class="w-2/4 h-4 -ml-40">4 Min read</span>
-                                <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-28 top-2"></span>
-                            </div>
-                            <div class="relative ml-4 text-3xl font-bold -top-60 left-64">
-                                <h1>Find dining 101</h1>
-                            </div>
-                            <span class="absolute w-3/6 -top-36" style="font-size:1.3rem; left:270px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem repudiandae iusto provident. Quo, dicta quasi.</span>
-                        </span>
-                    </div>
-                </li>
-                <li class="float-left mb-5 mr-5 bg-gray-700 h-72" style="width:49%; box-sizing:border-box;">
-                    <div class="w-full h-full">
-                        <img class="w-2/5 h-full" src="assets/images/older_posts/older_posts_5.jpg">
-                        <span class="relative w-2/3 h-full">
-                            <div class="relative flex ml-4 text-sm text-gray-300 bottom-64 left-64">
-                                <span class="w-2/4 h-4">Dec 6th 2021</span>
-                                <span class="w-2/4 h-4 -ml-40">4 Min read</span>
-                                <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-28 top-2"></span>
-                            </div>
-                            <div class="relative ml-4 text-3xl font-bold -top-60 left-64">
-                                <h1>Find dining 101</h1>
-                            </div>
-                            <span class="absolute w-3/6 -top-44" style="font-size:1.3rem; left:270px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem repudiandae iusto provident. Quo, dicta quasi.</span>
-                        </span>
-                    </div>
-                </li>
-                <li class="float-left mb-5 bg-gray-700 h-72" style="width:49%; box-sizing:border-box;">
-                    <div class="w-full h-full">
-                        <img class="w-2/5 h-full" src="assets/images/older_posts/older_posts_6.jpg">
-                        <span class="relative w-2/3 h-full">
-                            <div class="relative flex ml-4 text-sm text-gray-300 bottom-64 left-64">
-                                <span class="w-2/4 h-4">Dec 6th 2021</span>
-                                <span class="w-2/4 h-4 -ml-40">4 Min read</span>
-                                <span class="absolute w-2 h-2 rotate-45 bg-gray-400 left-28 top-2"></span>
-                            </div>
-                            <div class="relative ml-4 text-3xl font-bold -top-60 left-64">
-                                <h1>Find dining 101</h1>
-                            </div>
-                            <span class="absolute w-3/6 -top-44" style="font-size:1.3rem; left:270px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem repudiandae iusto provident. Quo, dicta quasi.</span>
-                        </span>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
+    
     <!-- Popular tags -->
 
     <!-- Newsletter -->
@@ -338,5 +68,10 @@
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <!-- Custom script -->
     <script src="./assets/js/main.js"></script>
+    <!-- <script>
+        function menu(e){
+            e.name === 'menu' ? e.innerHTML = '<i class="fa-solid fa-xmark" name="close"></i>' : e.name = 'menu';
+        }       
+    </script> -->
 </body>
 </html>
